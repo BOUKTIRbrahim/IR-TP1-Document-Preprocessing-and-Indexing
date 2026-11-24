@@ -28,7 +28,7 @@ Document-Preprocessing-and-Indexing/
     └── preprocessing_comparison.csv
 ```
 ## How to Run in Google Colab
-1. Upload tpl_preprocessing_indexing.ipynb to Google Colab (File -> Upload notebook).
+1. Upload tp1_preprocessing_indexing.ipynb to Google Colab (File -> Upload notebook).
 2. Run all cells sequentially from top to bottom.
 3. The notebook ensures the NLTK English stop-word list is available, creates results/, runs all preprocessing, indexing, and verification steps, and exports all required files to results/.
 
