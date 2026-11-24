@@ -33,7 +33,7 @@ Document-Preprocessing-and-Indexing/
 3. The notebook ensures the NLTK English stop-word list is available, creates results/, runs all preprocessing, indexing, and verification steps, and exports all required files to results/.
 
 ## Implementation Choices
-- Separate Preprocessing Versions (A, B, C):[cite: 2]
+- Separate Preprocessing Versions (A, B, C):
   - Version A: Converts text to lowercase, replaces punctuation/non-word-non-space characters with whitespace, and splits on whitespace while leaving the raw corpus dictionary untouched.
   - Version B: Filters out English stop words using NLTK's stopwords.words('english') on top of Version A.
   - Version C: Applies NLTK's PorterStemmer to each token in Version B.
@@ -45,4 +45,6 @@ Document-Preprocessing-and-Indexing/
 - Verification: Part 5 validates search_term() on single-document, multi-document, pre- and post-stemming (retrieval vs. retriev), and unknown query terms; checks zero-based positional accuracy against processed token lists; compares the manual D1-D3 index against the generated index; and verifies matrix values.
 
 ## Interpretation of Preprocessing Effects
-Lowercasing and punctuation removal unify case variants and separate words cleanly, while stop-word removal drops high-frequency function words (and, are, the, to, etc.), reducing vocabulary size, average document length, total postings, and stored token positions.[cite: 1, 2, 3] Applying Porter stemming further merges morphological variants (such as document/documents into document, index/indexed/indexing into index, and retrieve/retrieves/retrieval into retriev), shrinking the vocabulary and posting counts even more. However, preprocessing does not always improve retrieval: stemming can conflate distinct concepts or produce non-words, and removing stop words can affect phrase matching or positional proximity queries.
+Lowercasing and punctuation removal unify case variants and separate words cleanly, while stop-word removal drops high-frequency function words (and, are, the, to, etc.), reducing vocabulary size, average document length, total postings, and stored token positions. 
+Applying Porter stemming further merges morphological variants (such as document/documents into document, index/indexed/indexing into index, and retrieve/retrieves/retrieval into retriev), shrinking the vocabulary and posting counts even more. 
+However, preprocessing does not always improve retrieval: stemming can conflate distinct concepts or produce non-words, and removing stop words can affect phrase matching or positional proximity queries.
