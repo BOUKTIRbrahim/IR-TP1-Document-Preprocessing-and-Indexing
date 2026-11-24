@@ -4,28 +4,29 @@
 This repository contains the implementation and generated artifacts for Work Session 1 (Information Retrieval), covering text preprocessing, vocabulary and matrix representations, positional inverted indexing, preprocessing comparisons, and verification tests on a 10-document corpus (D1 to D10).
 
 ## Repository Structure
+```text
 Document-Preprocessing-and-Indexing/
-  README.md
-  requirements.txt
-  tpl_preprocessing_indexing.ipynb
-  results/
-    tokens_A.json
-    tokens_B.json
-    tokens_C.json
-    vocabulary_A.txt
-    vocabulary_B.txt
-    vocabulary_C.txt
-    binary_matrix_A.csv
-    binary_matrix_B.csv
-    binary_matrix_C.csv
-    tf_matrix_A.csv
-    tf_matrix_B.csv
-    tf_matrix_C.csv
-    inverted_index_A.json
-    inverted_index_B.json
-    inverted_index_C.json
-    preprocessing_comparison.csv
-
+├── README.md
+├── requirements.txt
+├── tp1_preprocessing_indexing.ipynb
+└── results/
+    ├── tokens_A.json
+    ├── tokens_B.json
+    ├── tokens_C.json
+    ├── vocabulary_A.txt
+    ├── vocabulary_B.txt
+    ├── vocabulary_C.txt
+    ├── binary_matrix_A.csv
+    ├── binary_matrix_B.csv
+    ├── binary_matrix_C.csv
+    ├── tf_matrix_A.csv
+    ├── tf_matrix_B.csv
+    ├── tf_matrix_C.csv
+    ├── inverted_index_A.json
+    ├── inverted_index_B.json
+    ├── inverted_index_C.json
+    └── preprocessing_comparison.csv
+```
 ## How to Run in Google Colab
 1. Upload tpl_preprocessing_indexing.ipynb to Google Colab (File -> Upload notebook).
 2. Run all cells sequentially from top to bottom.
